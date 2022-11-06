@@ -1,3 +1,3 @@
-# Gra Snake #
+# Snake game #
 
-Pierwszy projekt graficzny, gra została zrobiona z pomocą poradnika znaleziona na stronie Youtube.
+First GUI Project, game was made with a help of youtube video
