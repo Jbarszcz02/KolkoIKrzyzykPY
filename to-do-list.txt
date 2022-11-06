@@ -1,0 +1,7 @@
+TO DO:
+
+- Shows who won at the end
+- If draw, it's gonna say "Draw"
+- Text: "Press R to restart"
+
+
