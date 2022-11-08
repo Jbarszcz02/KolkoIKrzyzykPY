@@ -1,5 +1,3 @@
 TO DO:
 
-- If draw, it's gonna say "Draw"
-
-
+- Nothing at the moment
