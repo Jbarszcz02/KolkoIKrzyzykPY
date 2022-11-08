@@ -216,10 +216,9 @@ while True:
             elif check_win(player = 2):
                 screen.blit(xWins,(260, 0))
                 screen.blit(restartbutton,(220,570))
-            # if is_board_full():
-              #  if check_win(player != 1 and player != 2):
-               #     screen.blit(draw,(260, 0))
-                #    screen.blit(restartbutton,(220,570))
+            elif is_board_full():
+                screen.blit(draw,(260,0))
+                screen.blit(restartbutton,(220,570))
                 
                 
                 
