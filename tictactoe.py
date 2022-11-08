@@ -28,6 +28,8 @@ BG_COLOR = (28, 170, 156)
 LINE_COLOR = (23, 145, 135)
 CIRCLE_COLOR = (239, 231, 200)
 CROSS_COLOR = (66, 66, 66)
+FONT_COLOR = (0 , 0 , 0)
+font_obj = pygame.font.SysFont("timesnewroman",25)
 
 # Ekran z podaną szerokością i wysokością
 screen = pygame.display.set_mode( (WIDTH, HEIGHT) )
@@ -171,6 +173,11 @@ player = 1
 # Koniec gry
 game_over = False
 
+xWins=font_obj.render("X Wins!",True,FONT_COLOR)
+oWins=font_obj.render("O Wins!",True,FONT_COLOR)
+draw=font_obj.render("It's Draw!",True,FONT_COLOR)
+restartbutton=font_obj.render("Press R to restart",True,FONT_COLOR)
+
 
 # Główna pętla , żeby ekran sie nie zamykał, aktualizacja ekranu ,żeby zmienić np. kolor
 while True:
@@ -202,6 +209,21 @@ while True:
                     player = 1
                 
                 draw_figures()
+ 
+            if check_win(player = 1):
+                screen.blit(oWins,(260 , 0))
+                screen.blit(restartbutton,(220,570))
+            elif check_win(player = 2):
+                screen.blit(xWins,(260, 0))
+                screen.blit(restartbutton,(220,570))
+            # if is_board_full():
+              #  if check_win(player != 1 and player != 2):
+               #     screen.blit(draw,(260, 0))
+                #    screen.blit(restartbutton,(220,570))
+                
+                
+                
+
                 
                 
         if event.type == pygame.KEYDOWN:
